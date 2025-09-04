@@ -22,6 +22,15 @@ Remember: The goal is to LEARN, not just get working code!
 MY ORIGINAL AI PROMPT:
 [Paste the prompt you used to generate your problem set here]
 
+"I'm learning Python basics in a high school programming class. I'm new to programming. Can you create 5-7 practice problems that cover:
+> - Variables and basic data types
+> - Conditionals (if/elif/else)
+> - Loops (for and while)
+> - Functions
+> - Basic list operations
+> 
+> Make them progressively more challenging. Make sure each problem has clear instructions and example inputs/outputs."
+
 Example: "I'm learning Python basics in a high school programming class. 
 I have some experience with Java. Can you create 5-7 practice problems that cover..."
 """
@@ -43,6 +52,16 @@ Example inputs/outputs:
 - is_even(7) should return False
 """
 
+"""Problem 1: Hello, Variables!/Concepts: Variables, Strings, Integers/Instructions:
+Create a program that asks the user for their name and age, then prints a greeting with their name and how old they’ll be next year.
+
+Example:
+Input:
+  What is your name? Alice
+  How old are you? 15
+
+Output:
+  Hello, Alice! Next year, you will be 16 years old.
 
 
 
@@ -59,6 +78,7 @@ Example inputs/outputs:
 
 
 """
+""""
 Test all your solutions with different inputs
 
 Add asserts if you feel comfortable
