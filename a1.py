@@ -1,5 +1,5 @@
 # Assignment 1: AI-Generated Python Problems
-# Name: [Your Name Here]
+# Name: [Juan Torres]
 
 """
 AI-Generated Problem Set
@@ -52,16 +52,112 @@ Example inputs/outputs:
 - is_even(7) should return False
 """
 
-"""Problem 1: Hello, Variables!/Concepts: Variables, Strings, Integers/Instructions:
-Create a program that asks the user for their name and age, then prints a greeting with their name and how old they’ll be next year.
+"""Problem 1: Favorite Number (Variables & Data Types)
 
-Example:
-Input:
-  What is your name? Alice
-  How old are you? 15
+Objective: Practice using variables and basic data types.
+
+Instructions:
+Write a program that stores your name and your favorite number in variables. Then, print a message like:
+
+"Hello, my name is Alex and my favorite number is 7."
+
+
+Example Output:
+
+Hello, my name is Jamie and my favorite number is 12."""
+
+
+
+
+"""Problem 2: Movie Ticket Price (Conditionals)
+
+Objective: Use if, elif, and else statements.
+
+Instructions:
+Write a program that asks for a person's age and prints the cost of a movie ticket based on the following rules:
+
+Under 5 years old: Free
+
+5 to 12 years old: $5
+
+13 to 59 years old: $10
+
+60 and older: $7
+
+Example Input/Output:
+
+Enter your age: 3
+Ticket price: Free
+
+Enter your age: 10
+Ticket price: $5
+
+Enter your age: 70
+Ticket price: $7"""
+
+"""Problem 3: Count to Ten (Loops)
+
+Objective: Use a while loop and a for loop.
+
+Instructions:
+Write two separate loops that count from 1 to 10 (inclusive).
+
+First, use a while loop.
+
+Then, use a for loop.
+
+Example Output:
+
+Using while loop:
+1 2 3 4 5 6 7 8 9 10
+
+Using for loop:
+1 2 3 4 5 6 7 8 9 10"""
+
+
+"""Problem 4: Even or Odd Checker (Functions + Conditionals)
+
+Objective: Write and use a function.
+
+Instructions:
+Create a function called check_even_or_odd(number) that takes a number as input and prints whether it is even or odd.
+
+Then, ask the user for a number, pass it to the function, and show the result.
+
+Example Input/Output:
+
+Enter a number: 9
+9 is odd
+
+Enter a number: 4
+4 is even"""
+
+"""Problem 5: List Analyzer (Lists + Loops + Functions)
+
+Objective: Work with lists and loop through them in a function.
+
+Instructions:
+Write a function called analyze_numbers(numbers) that:
+
+Takes a list of numbers as input
+
+Prints the largest number
+
+Prints the smallest number
+
+Calculates and prints the average of the numbers
+
+Example Input/Output:
+
+numbers = [10, 5, 8, 20, 3]
+analyze_numbers(numbers)
+
 
 Output:
-  Hello, Alice! Next year, you will be 16 years old.
+
+Largest number: 20
+Smallest number: 3
+Average: 9.2"""
 
 
 
