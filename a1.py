@@ -66,6 +66,9 @@ Example Output:
 
 Hello, my name is Jamie and my favorite number is 12."""
 
+name_str = input("Please enter your name: ")
+num_int = int(input("Please enter your favorite number "))
+print(f"Hi my name is {name_str} my favorite number is {num_int}")
 
 
 
@@ -175,7 +178,7 @@ Average: 9.2"""
 
 """
 """"
-Test all your solutions with different inputs
+"""Test all your solutions with different inputs
 
 Add asserts if you feel comfortable
 

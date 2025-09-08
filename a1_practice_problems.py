@@ -44,9 +44,12 @@ def factorial(n: int) -> int:
     """
     fact = 1
     for i in range(1, n+1):
-     fact *= i
-     return fact 
+        fact *= i
+     
+     
+    return fact 
 
+T = TypeVar("T")
 
 def every_other(lst: List[T]) -> List[T]:
     """Takes a list and returns a list of every other element in the list, starting with
@@ -63,8 +66,8 @@ def every_other(lst: List[T]) -> List[T]:
 
     for i in range(len(lst)):
         if i % 2 == 0:
-         curr = lst[i]
-        newLst.append(curr)
+            curr = lst[i]
+            newLst.append(curr)
     return newLst
 
 def sum_list(lst: List[int]) -> int:
@@ -122,9 +125,11 @@ def median(lst: List[int]) -> float:
     
     medList = len(lst)
     num = 0
-
-
-
+    if len(lst) % 2 ==1:
+        return lst[(len(lst)//2)]
+    idxMidR = len(lst)//2
+    idxMidR = idxMidR
+    return(lst[idxMidR] + lst[idxMidR]) / 2
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
@@ -146,8 +151,11 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
-    raise NotImplementedError("duck_duck_goose")
-
+    idx = 0
+    while len(lst) > 2:
+        idx = (idx + 2) % len(lst)
+        lst.pop(idx)
+    return lst
 
 # this line causes the nested code to be skipped if the file is imported instead of run
 if __name__ == "__main__":
