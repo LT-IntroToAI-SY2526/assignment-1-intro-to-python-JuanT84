@@ -98,6 +98,17 @@ Ticket price: $5
 Enter your age: 70
 Ticket price: $7"""
 
+age = int(input("Please Input Your Age "))
+if age < 5:
+    print("Ticket Price: Free")
+elif age <=12:
+    print("Ticket Price: $5")
+elif age <=59:
+    print("Ticket Price: $10")
+else:
+    print("Ticket Price: $7")
+
+
 """Problem 3: Count to Ten (Loops)
 
 Objective: Use a while loop and a for loop.
@@ -117,8 +128,16 @@ Using while loop:
 Using for loop:
 1 2 3 4 5 6 7 8 9 10"""
 
+i = 1
+while i <= 10:
+    print(i, end=" ")
+    i += 1
+print()
+for i in range (1, 11):
+  print(i, end=" ")
+  
 
-"""Problem 4: Even or Odd Checker (Functions + Conditionals)
+  """Problem 4: Even or Odd Checker (Functions + Conditionals)
 
 Objective: Write and use a function.
 
@@ -134,6 +153,15 @@ Enter a number: 9
 
 Enter a number: 4
 4 is even"""
+
+num = int(input("Enter a Number"))
+def check_even_or_odd(num):
+    check = num % 2 
+    if check == 0:
+        print(f"{num} is Even")
+    else:
+        print(f"{num} is Odd")
+check_even_or_odd(num)
 
 """Problem 5: List Analyzer (Lists + Loops + Functions)
 
@@ -162,6 +190,15 @@ Largest number: 20
 Smallest number: 3
 Average: 9.2"""
 
+num = [10,5,8,20,3]
+def analyze_numbers(num):
+    largest = max(num)
+    minimum = min(num)
+    average =  sum(num)/len(num)
+    print(f"Largest Number: {largest}")
+    print(f"Smallest Number: {minimum}")
+    print(f"Average Number: {average}")
+analyze_numbers(num)
 
 
 
@@ -177,7 +214,7 @@ Average: 9.2"""
 
 
 """
-""""
+"""
 """Test all your solutions with different inputs
 
 Add asserts if you feel comfortable
@@ -190,6 +227,8 @@ print(f"is_even(7): {is_even(7)}")  # Should print False
 
 print("Testing Problem 1:")
 # Add your tests here
+
+
 
 print("\nTesting Problem 2:")
 # Add your tests here
